@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8b3dac3ab632b44582854f2180a940b, type: 3}
+  m_Name: New Chunk Color Palette
+  m_EditorClassIdentifier: 
+  colors:
+  - {r: 0.6509434, g: 0.34082413, b: 0.34082413, a: 1}
+  - {r: 0.99178326, g: 1, b: 0, a: 1}
+  - {r: 0.19103774, g: 0.764151, b: 0.21019287, a: 1}
+  - {r: 0.23807405, g: 0.3223464, b: 0.4716981, a: 1}
+  - {r: 0.18534178, g: 0.8018868, b: 0.71249706, a: 1}

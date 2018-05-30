@@ -1,0 +1,227 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1407427555914190}
+  m_IsPrefabParent: 1
+--- !u!1 &1407427555914190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4135478859928790}
+  - component: {fileID: 33182828103031964}
+  - component: {fileID: 23350914167274024}
+  - component: {fileID: 64793145374056720}
+  - component: {fileID: 114213268270633922}
+  - component: {fileID: 114161475060862972}
+  - component: {fileID: 114670593612951528}
+  m_Layer: 9
+  m_Name: MarchingChunk
+  m_TagString: Chunk
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4135478859928790
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1407427555914190}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &23350914167274024
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1407427555914190}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: c2151657b9ad02b4dacd009c3b0352ba, type: 2}
+  - {fileID: 2100000, guid: d5d1a95fe3a5b2240a070b3b77fe6a90, type: 2}
+  - {fileID: 2100000, guid: cfcec51dbcade024e8147649ca3f596d, type: 2}
+  - {fileID: 2100000, guid: 821789613b5fd4a409b10fb5d7e1dffc, type: 2}
+  - {fileID: 2100000, guid: a1c2f13e707c1f844a60f870a9be3c4d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &33182828103031964
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1407427555914190}
+  m_Mesh: {fileID: 0}
+--- !u!64 &64793145374056720
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1407427555914190}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 0}
+--- !u!114 &114161475060862972
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1407427555914190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cea8250ea86550409493054b685c32e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chunkGen: {fileID: 0}
+  chunk: {fileID: 114213268270633922}
+  cubeGridGenerated: 0
+  colorCount: 0
+--- !u!114 &114213268270633922
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1407427555914190}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da75a2def7005904aa576aedd0c7a30a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chunkGen: {fileID: 0}
+  topChunk: {fileID: 0}
+  bottomChunk: {fileID: 0}
+  leftChunk: {fileID: 0}
+  rightChunk: {fileID: 0}
+  forwardChunk: {fileID: 0}
+  backChunk: {fileID: 0}
+  meshGen: {fileID: 114161475060862972}
+  position: {x: 0, y: 0, z: 0}
+  chunkSize: 0
+  cubeSize: 0
+  mesh: {fileID: 0}
+  mf: {fileID: 33182828103031964}
+  mc: {fileID: 64793145374056720}
+  verticesStartPosition: []
+  palette: {fileID: 11400000, guid: 04e524fce6e460145987e3a3657d216d, type: 2}
+--- !u!114 &114670593612951528
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1407427555914190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0a28a152671dd54c9adc078755fbc90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chunkGen: {fileID: 0}
+  m_material: {fileID: 2100000, guid: a1c2f13e707c1f844a60f870a9be3c4d, type: 2}
+  maxHeight: 30
+  groundLevel: 8
+  heightMaps:
+  - map: {fileID: 2800000, guid: 99336692dec83304983f6bd8f8770380, type: 3}
+    scale: 1
+    opacity: 0.25
+  decoration:
+  - prefab: {fileID: 114168665279384854, guid: 70b252d23c354164cb040ff87c9bbd36, type: 2}
+    stickDirection: {x: 0, y: 1, z: 0}
+    minDensity: -0.26
+    maxDensity: -0.24
+    probability: 0.75
+    minHeight: 8
+    maxHeight: 64
+  - prefab: {fileID: 114168665279384854, guid: 70b252d23c354164cb040ff87c9bbd36, type: 2}
+    stickDirection: {x: 0, y: -1, z: 0}
+    minDensity: -0.26
+    maxDensity: -0.24
+    probability: 0.75
+    minHeight: 16
+    maxHeight: 32
+  - prefab: {fileID: 114016379197116000, guid: 2db3f57452b379848a5e972f5a7974df, type: 2}
+    stickDirection: {x: 0, y: -1, z: 0}
+    minDensity: -0.26
+    maxDensity: -0.24
+    probability: 0.75
+    minHeight: 0
+    maxHeight: 4
+  decorationObjects: []
+  seed: 0
+  topChunk: {fileID: 0}
+  bottomChunk: {fileID: 0}
+  leftChunk: {fileID: 0}
+  rightChunk: {fileID: 0}
+  forwardChunk: {fileID: 0}
+  backChunk: {fileID: 0}
+  position: {x: 0, y: 0, z: 0}
+  width: 16
+  height: 16
+  length: 16
+  cubeSize: 1
+  heightCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -1
+      value: -1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
